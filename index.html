@@ -14,7 +14,8 @@
       <button id='add-row'>Add a row</button>
       <button id='fill-color'>Fill color</button>
       <button id='fill-empty'>Fill empty cells</button>
-      <button id='clear'>Clear</button>
+      <button id='clear'>Clear cells</button>
+      <button id='reset'>Reset</button>
       <select id="select-color">
         <option class="red" value="red">Red</option>
         <option class="orange" value="orange">Orange</option>
@@ -28,9 +29,9 @@
         <option class="brown" value="brown">Brown</option>
       </select>
       <div class="customRowColumn">
-        <input type="number" id='rows'>Rows</button>
-        <input type="number" id='columns'>Columns</button>
-        <button id='clear'>Create my customized cells</button>
+        <input type="number" value="0" min="0" id='rows'>Rows</button>
+        <input type="number" value="0" min="0" id='columns'>Columns</button>
+        <button id='customized'>Add customized cells</button>
       </div>
     </div>
     <table id="table">

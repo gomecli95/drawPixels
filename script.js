@@ -4,11 +4,30 @@ const colorSelect = document.getElementById("select-color");
 const fillColor = document.getElementById("fill-color");
 const fillEmptyCells = document.getElementById("fill-empty");
 const clear = document.getElementById("clear");
+const customized = document.getElementById("customized");
+const reset = document.getElementById("reset");
+const rows = document.getElementById("rows");
+const columns = document.getElementById("columns");
 
-function makeRow() {
+customized.addEventListener("click", () => {
+    for (let i = 0; i < columns.value; i++) {
+        makeRow(rows.value);
+    }
+})
+
+reset.addEventListener("click", () => {
+    while (table.firstChild) {
+        table.removeChild(table.firstChild);
+    }
+    rows.value = 0;
+    columns.value
+})
+
+
+function makeRow(numberOfColumns = 20) {
     const tableRow = document.createElement("tr");
     table.appendChild(tableRow);
-    for (let i = 0; i < 20; i++) {
+    for (let i = 0; i < numberOfColumns; i++) {
         const tableData = document.createElement("td");
         tableRow.appendChild(tableData);
     }
