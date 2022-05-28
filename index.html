@@ -12,20 +12,28 @@
     <h1>DrawPixels</h1>
     <div>
       <button id='add-row'>Add a row</button>
-      <select>
-        <option value="red">Red</option>
-        <option value="orange">Orange</option>
-        <option value="yellow">Yellow</option>
-        <option value="green">Green</option>
-        <option value="blue">Blue</option>
-        <option value="indigo">Indigo</option>
-        <option value="violet">Violet</option>
-        <option value="black">Black</option>
-        <option value="white">White</option>
-        <option value="brown">Brown</option>
+      <button id='fill-color'>Fill color</button>
+      <button id='fill-empty'>Fill empty cells</button>
+      <button id='clear'>Clear</button>
+      <select id="select-color">
+        <option class="red" value="red">Red</option>
+        <option class="orange" value="orange">Orange</option>
+        <option class="yellow" value="yellow">Yellow</option>
+        <option class="green" value="green">Green</option>
+        <option class="blue" value="blue">Blue</option>
+        <option class="indigo" value="indigo">Indigo</option>
+        <option class="violet" value="violet">Violet</option>
+        <option class="black" value="black">Black</option>
+        <option class="white" value="white">White</option>
+        <option class="brown" value="brown">Brown</option>
       </select>
+      <div class="customRowColumn">
+        <input type="number" id='rows'>Rows</button>
+        <input type="number" id='columns'>Columns</button>
+        <button id='clear'>Create my customized cells</button>
+      </div>
     </div>
-    <table>
+    <table id="table">
     </table>
   </body>
   <!-- loads our JavaScript file -->
